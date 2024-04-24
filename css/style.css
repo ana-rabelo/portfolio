@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --azul-oxford: #16182C;
+    --azul-cambridge: #72A98F;
+    --coral-claro: #DD7373;
+    --ciano-escuro: #3E8989;
+    --rosa-orquidea: #DBB1BC;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background: var(--azul-oxford);
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+
+}
+
+.navegacao {
+    display: flex;
+    justify-content: start;
+    gap: 5rem;
+    color: var(--rosa-orquidea);
+    margin: 0 19% 0 19%;
+    padding: 3% 5rem 0;
+    font-weight: 600;
+}
+
+.apresentacao {
+    margin: 0 19% 0 19%;
+    padding: 6% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 0rem 5rem;
+}
+
+.apresentacao__conteudo__titulo {
+    font-family: 'Krona One', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.titulo-destaque {
+    color: var(--rosa-orquidea);
+}
+
+.apresentacao__foto {
+    display: flex;
+    gap: 2rem;
+    padding: 0rem 1rem;
+}
+
+.foto__img {
+    width: 310px;
+    height: 395px;
+    border-radius: 3%; 
+}
+
+.foto__estrela {
+    position: relative;
+    top: 300px;
+    left: 180px;
+    width: 30px;
+}
+
+.apresentacao__foto__border {
+    position: absolute;
+    z-index: -1;
+    width: 310px;
+    height: 385px;
+    border: 0.1rem solid var(--rosa-orquidea);
+    border-radius: 3%;
+    margin: 1.5rem 0rem 0rem 0.5rem;
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.apresentacao__links__titulo {
+    font-family: 'Krona One', sans-serif;
+}
+
+.apresentacao__links__link {
+    border: var(--rosa-orquidea) 0.1rem solid;
+    border-radius: 0.3rem;
+    padding: 0.8rem 5rem 0.8rem 3rem;
+    width: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

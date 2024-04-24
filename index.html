@@ -5,10 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="icon" sizes="192x192" href="" type="image/png">
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
-    
+    <header>
+        <nav class="navegacao">
+            <div>Home</div>
+            <div>Sobre mim</div>
+        </nav>
+    </header>
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio digital a outro nível<strong 
+            class="titulo-destaque"> com um Front-end de qualidade!
+            </strong></h1>
+            <p class="apresentacao__conteudo__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in nulla arcu. 
+                Praesent eget ipsum nisl. Cras eu dapibus urna. Aliquam lacinia est sapien, a malesuada massa congue at. 
+                Mauris eget risus sollicitudin, tristique libero quis, posuere magna. Morbi elementum dolor vel lobortis sodales. 
+                Donec vitae dignissim lectus. Nulla facilisi. Nullam malesuada lorem ac rutrum tempus. 
+                Integer cursus, velit sit amet fermentum ullamcorper, mi ex pretium odio, et maximus sem libero ac enim. 
+                Phasellus dapibus dolor id aliquet laoreet.</p>
+            <div class="apresentacao__links">
+                <h2 class="apresentacao__links__titulo">Acesse minhas redes</h2>
+                <a class="apresentacao__links__link" href="https://github.com/ana-rabelo">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                    <p>Github</p>
+                </a>
+                <a class="apresentacao__links__link" href="">
+                    <img height="30px" src="./assets/linkedin.svg" alt="">
+                    <p>LinkedIn</p>
+                </a>
+            </div>
+        </section>
+        <div class="apresentacao__foto">
+            <div>
+                <div class="foto__estrela">
+                    <svg viewbox="0 0 10 10">
+                        <defs>
+                          <linearGradient id="starGrad">
+                            <stop offset="0%" stop-color="rgb(219,177,188)" />
+                            <stop offset="100%" stop-color="rgb(221,115,115)"/>      
+                          </linearGradient>
+                        </defs>
+                        <path fill="url(#starGrad)" d="M5 1 Q5.8 4.2 9 5 Q5.8 5.8 5 9 Q4.2 5.8 1 5 Q4.2 4.2 5 1z" />  
+                      </svg>
+                </div>
+                <!-- https://lh3.googleusercontent.com/pw/AP1GczP4XUwdMDZRt6ki3QiVrm2B-Q88fpHkBxxU2_IokMvEdBsCwHaRyPavULuiefqrbOojH7oxKbm2gAWGeuoTubE9BJSfutnWrwo7SVyVkaYWKlVce6WkYLVUNBLG1GcFd0XQzLgiDYi62K0vbJulFNboqXkUeqlRRuaRxPaQGc6Chhwe3Nuwo1zIaTUeLB9jguJi6s6r6lbmblLi_oW00ljzDM1gqT6CI1WjIVAokqPt-l8HmckHyo2g_ua0EZmO-NDEpZ-20M2j60HZsOL2fxXdZ0qvKYdvBYpNHqw6dIVLkNfsUJsim47jgGsuX7-GtNAQRE4wf6XKc7pLjokv2GGKAesSrAO0IMf8suqgkGA3RwZiQtInzBvLgkJao490OmZ4-adElTOtKOIioF2SaxiDKuKptXGodnjJdH3yXSWYvobNG40Xy8e5WoHVVqkj-2EirGlutViTcDvp3wV01yzW9Lyt6Xb8oClVNOoVH6mm4xeXQ8IzWjAm-b5C8-FPw5eoZ8dEv-fCOxcKofYCmwQ2HxjDcN-R3lTDnJmQDBd_EmGkrHqPxL0CGtfj0dzaeG3eNdjxgEnkSGI6wnnTxlRNvfeGiatRYvP5SSSSB5nZsDJOvjs2HVNuvCGSzmyTojvPTDyl21VsQ91AOoS2zNPMtlgldt3gJmkTmuo5GUQkZJdsSRPUJuVTizj4OJukHWyUedxg2_jM34wrkbdLRkCkyO8n4w-lNscAVMpxaNjLhOI7TDEEOuYcwsR9S7PAu60G_KTj4wO3mMiRMTkZmRRYJGC5oht5_-vasb1rLfvDgTBP0rg8gJpvBVCUYG2GB7sKuuElcV-7xmhBohdvOLn1REcajv_Op3nkN5IKjLrBDBj8A3ESRknLzSqqTPOFGVcJBcIcusePqTDrJdIo0oMT9se16NWStr8s1tpFAMev_6gT1HRKvBvGttvgveRZ=w701-h945-s-no-gm?authuser=0 -->
+                <img class="foto__img" src="https://www.vonixx.com.br/wp-content/themes/vonixx/images/490x550.png" alt="Foto da Ana Paula Rabelo">
+            </div>
+            <div class="apresentacao__foto__border"></div>
+        </div>
+    </main>
 </body>
 </html>
