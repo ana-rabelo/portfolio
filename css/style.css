@@ -39,7 +39,7 @@ body {
 .apresentacao__conteudo {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
     gap: 2rem;
     padding: 0rem 5rem;
 }
@@ -48,6 +48,7 @@ body {
     font-family: 'Krona One', sans-serif;
     font-size: 2.5rem;
     font-weight: 400;
+    align-self: flex-start;
 }
 
 .titulo-destaque {
@@ -86,7 +87,7 @@ body {
 .apresentacao__links {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 1rem;
 }
@@ -95,13 +96,21 @@ body {
     font-family: 'Krona One', sans-serif;
 }
 
-.apresentacao__links__link {
-    border: var(--rosa-orquidea) 0.1rem solid;
+.apresentacao__links__rede {
+    border: var(--rosa-orquidea) 0.14rem solid;
     border-radius: 0.3rem;
-    padding: 0.8rem 5rem 0.8rem 3rem;
-    width: 150px;
+    text-align: center;
+    padding: 1rem;
+    gap: 1rem;
+    width: 280px;
 
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+.apresentacao__links__rede img {
+    width: 32px;
+    height: 32px;
 }
