@@ -15,7 +15,6 @@
 }
 
 body {
-    height: 100vh;
     box-sizing: border-box;
     background: whitesmoke;
     color: var(--azul-oxford);
@@ -32,7 +31,7 @@ body {
 .apresentacao,
 .habilidades {
     margin: 0 15% 0 15%;
-    padding: 4% 0 0 0;
+    padding: 4% 0 4% 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -99,23 +98,23 @@ body {
 }
 
 .foto__img {
-    width: 410px;
-    height: 480px;
+    width: 25.5rem;
+    height: 30rem;
     border-radius: 3%; 
 }
 
 .foto__estrela {
     position: relative;
-    top: 100px;
-    left: 80px;
-    width: 45px;
+    top: 8rem;
+    left: 6rem;
+    width: 2.8rem;
 }
 
 .apresentacao__foto__border {
     position: absolute;
     z-index: -1;
-    width: 410px;
-    height: 480px;
+    width: 25.5rem;
+    height: 30rem;
     border: 0.14rem solid var(--coral-claro);
     border-radius: 3%;
     margin: 2rem 0rem 0rem 0.8rem;
@@ -139,7 +138,7 @@ body {
     text-align: center;
     padding: 0.5rem;
     gap: 1rem;
-    width: 240px;
+    width: 15rem;
 
     display: flex;
     flex-direction: row;
@@ -149,13 +148,13 @@ body {
 
 .apresentacao__links__rede:hover {
     background-color:rgb(242, 242, 242) ;
-    /* melhorar isso */
+    /* melhorar isso, talvez setandp uma area ixa poros boteos */
     zoom: 101%;
 }
 
 .apresentacao__links__rede img {
-    width: 32px;
-    height: 32px;
+    width: 1.7rem;
+    height: 1.7rem;
 }
 
 .navegacao {
@@ -351,4 +350,16 @@ input:checked + .slider:before {
 .texto__langs {
     display: flex;
     gap: 1.2rem;
+}
+
+.rodape {
+    padding: 24px;
+    color: #000000;
+    background-color: var(--coral-claro);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;;
+
+    position: absolute;
 }
