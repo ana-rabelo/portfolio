@@ -102,9 +102,9 @@ let currentImageIndex = 0;
 
 function changeImage(step) {
   const images = [
-    "../assets/images/projects/fokus.png",
-    "../assets/images/projects/guess-my-number.png",
-    "../assets/images/projects/pig-game.png",
+    "./assets/images/projects/fokus.png",
+    "./assets/images/projects/guess-my-number.png",
+    "./assets/images/projects/pig-game.png",
   ];
 
   const texto = [
@@ -114,9 +114,9 @@ function changeImage(step) {
         Fokus é um projeto de pomodoro timer com uma lista de tarefas.
     </p>
     <div class="texto__langs">
-        <img width="32px" height=32px src="../assets/images/icon_html-5.png" alt="HTML ícone">
-        <img width="32px" height=32px src="../assets/images/icon_css-3.png" alt="CSS ícone">
-        <img width="32px" height=32px src="../assets/images/icon_js.png" alt="JS ícone">
+        <img width="32px" height=32px src="./assets/images/icon_html-5.png" alt="HTML ícone">
+        <img width="32px" height=32px src="./assets/images/icon_css-3.png" alt="CSS ícone">
+        <img width="32px" height=32px src="./assets/images/icon_js.png" alt="JS ícone">
     </div>
     `,
 
@@ -126,9 +126,9 @@ function changeImage(step) {
         O Adivinhe meu numero é um jogo que seleciona "aleatoriamente" um número de 1 a 20 e o usuário precisa acertá-lo.
     </p>
     <div class="texto__langs">
-        <img width="32px" height=32px src="../assets/images/icon_html-5.png" alt="HTML ícone">
-        <img width="32px" height=32px src="../assets/images/icon_css-3.png" alt="CSS ícone">
-        <img width="32px" height=32px src="../assets/images/icon_js.png" alt="JS ícone">
+        <img width="32px" height=32px src="./assets/images/icon_html-5.png" alt="HTML ícone">
+        <img width="32px" height=32px src="./assets/images/icon_css-3.png" alt="CSS ícone">
+        <img width="32px" height=32px src="./assets/images/icon_js.png" alt="JS ícone">
     </div>
     `,
     `
@@ -139,15 +139,15 @@ function changeImage(step) {
         no turno se rolarem 1.
     </p>
     <div class="texto__langs">
-        <img width="32px" height=32px src="../assets/images/icon_html-5.png" alt="HTML ícone">
-        <img width="32px" height=32px src="../assets/images/icon_css-3.png" alt="CSS ícone">
-        <img width="32px" height=32px src="../assets/images/icon_js.png" alt="JS ícone">
+        <img width="32px" height=32px src="./assets/images/icon_html-5.png" alt="HTML ícone">
+        <img width="32px" height=32px src="./assets/images/icon_css-3.png" alt="CSS ícone">
+        <img width="32px" height=32px src="./assets/images/icon_js.png" alt="JS ícone">
     </div>
     `
   ];
 
   const links = [
-    `	<img src="../assets/images/projects/fokus.png" alt="Imagem Projeto Fokus" class="conteudo__imagens-projeto">
+    `	<img src="./assets/images/projects/fokus.png" alt="Imagem Projeto Fokus" class="conteudo__imagens-projeto">
                 
     <div class="conteudo__imagens-icons">
         <a href="https://github.com/ana-rabelo/fokus" class="icon__view-code" target="_blank">
@@ -157,7 +157,7 @@ function changeImage(step) {
             <img width="32px" height=32px src="./assets/images/icon_eye-light.png" alt="">
         </a>
     </div>`,
-    ` <img src="../assets/images/projects/guess-my-number.png" alt="Imagem Projeto Adivinhe meu número" class="conteudo__imagens-projeto">
+    ` <img src="./assets/images/projects/guess-my-number.png" alt="Imagem Projeto Adivinhe meu número" class="conteudo__imagens-projeto">
                 
     <div class="conteudo__imagens-icons">
         <a href="https://github.com/ana-rabelo/guess-my-number" class="icon__view-code" target="_blank">
@@ -167,7 +167,7 @@ function changeImage(step) {
             <img width="32px" height=32px src="./assets/images/icon_eye-light.png" alt="">
         </a>
     </div>`,
-    ` <img src="../assets/images/projects/pig-game.png" alt="Imagem jogo Pig Game" class="conteudo__imagens-projeto">
+    ` <img src="./assets/images/projects/pig-game.png" alt="Imagem jogo Pig Game" class="conteudo__imagens-projeto">
                 
     <div class="conteudo__imagens-icons">
         <a href="https://github.com/ana-rabelo/pig-game" class="icon__view-code" target="_blank">
