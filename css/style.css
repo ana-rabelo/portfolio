@@ -20,7 +20,7 @@ body {
   background: #f5f5f5;
   color: var(--azul-oxford);
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
+  font-size: 1rem;
 
   /* Aplicar transparência */
 }
@@ -56,14 +56,14 @@ body::before {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  padding: 0 5rem 0 0;
+  padding: 0 5rem 5rem 0;
 }
 
 .apresentacao__conteudo__titulo,
 .habilidades__conteudo__titulo,
 .apresentacao__conteudo__titulo-aboutme {
   font-family: "Krona One", sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 400;
   align-self: flex-start;
   justify-self: flex-start;
@@ -116,7 +116,7 @@ body::before {
 .apresentacao__foto {
   display: flex;
   gap: 2rem;
-  padding: 0rem 1rem;
+  padding: 0rem 0 5rem 1rem;
 }
 
 .foto__img {
@@ -297,7 +297,7 @@ input:checked + .slider:before {
   background-color: #1f1f1f;
 }
 
-/* ----------------- */     
+/* ----------------- */
 
 .habilidades {
   display: flex;
@@ -361,15 +361,14 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  flex-shrink: 2;
+  flex-shrink: 1;
   width: 400px;
 }
 
 .texto__titulo {
   font-family: "Krona One", sans-serif;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-weight: 400;
-  height: 60px;
 }
 
 .texto__link {
@@ -432,8 +431,12 @@ input:checked + .slider:before {
   background-color: var(--cinza-claro);
   padding: 5px 10px;
   border-radius: 50%;
-  
+
   z-index: 1;
+}
+
+.contato_formulario {
+  padding: 0 0 5rem 0;
 }
 
 /* ----------------------------- */
@@ -460,7 +463,8 @@ input:checked + .slider:before {
   width: 500px;
 }
 
-.formulario__contato input, textarea {
+.formulario__contato input,
+textarea {
   padding: 0.5rem;
   border: 0.14rem solid var(--verde);
   border-radius: 0.3rem;
@@ -473,22 +477,22 @@ input:checked + .slider:before {
 }
 
 .formulario__contato-btn {
-    background-color: var(--verde); 
-    padding: 0.5rem;
-    border-radius: 0.3rem;
-    color: #fff; 
-    border: none; 
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
+  background-color: var(--verde);
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
 .formulario__contato-btn:hover {
   background-color: #6b9f87;
 }
 
 .conteudo__redes {
-    display: flex;
-    gap: 2rem;
+  display: flex;
+  gap: 2rem;
 }
 
 .apresentacao__foto-stacks {
@@ -499,17 +503,17 @@ input:checked + .slider:before {
 
 /* tablet */
 @media (max-width: 1150px) {
-
   .navegacao {
     gap: 10%;
     justify-content: center;
+    padding: 7% 0 0 0;
   }
 
-
+  /* 
   body{
     border: greenyellow 1px solid;
-  }
-  
+  } */
+
   .apresentacao {
     flex-direction: column-reverse;
     gap: 2rem;
@@ -517,7 +521,7 @@ input:checked + .slider:before {
 
   .apresentacao__conteudo {
     padding: 0 1rem 8rem;
-    margin: 0;  
+    margin: 0;
   }
 
   .apresentacao__foto-stacks {
@@ -531,21 +535,21 @@ input:checked + .slider:before {
 
   .contato {
     flex-direction: column;
+    padding: 10% 0 10% 0;
   }
 
   .rodape {
     position: relative;
-    min-width: auto; 
+    min-width: auto;
+  }
+
+  .habilidades	{
+    padding: 10% 0 0 0;
   }
 }
 
 /* mobile */
 @media (max-width: 600px) {
-
-  body{
-    border: rgb(0, 157, 255) 1px solid;
-  }
-
   .navegacao {
     display: none;
     flex-direction: column;
@@ -561,24 +565,107 @@ input:checked + .slider:before {
     display: none;
   }
 
-  .navegacao__mobile {
-    
+  .hidden {
+    display: block;
   }
 
   .apresentacao {
     flex-direction: column-reverse;
+
     gap: 2rem;
+    padding: 0;
   }
 
-  .apresentacao__conteudo{
+  .apresentacao__conteudo {
     padding: 0 1rem 8rem;
-    margin: 0;  
+    margin: 0;
   }
 
   .apresentacao__foto {
     padding: 5rem 0 2rem 0;
   }
 
+  .foto__estrela {
+    display: none;
+  }
 
+  .foto__img {
+    width: 12rem;
+    height: 15rem;
+  }
+
+  .apresentacao__foto__border {
+    width: 12rem;
+    height: 15rem;
+    margin: 0.5rem 0rem 0rem 0.5rem;
+  }
+
+  .navegacao__mobile {
+    background-color: rgba(245, 245, 245, 0.903);
+    position: absolute;
+    right: 0;
+    left: 0;
+  }
+
+  .navegacao__link {
+    width: fit-content;
+  }
+
+  #menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 40px 0;
+    gap: 1rem;
+    font-weight: 600;
+    border-bottom: var(--coral-claro) 0.2rem solid;
+  }
+
+  .navegacao__mobile #menu {
+    display: none;
+  }
+
+  .navegacao__mobile a {
+    color: var(--coral-claro);
+    padding: 8px 8px;
+    text-decoration: none;
+    font-size: 21px;
+    display: block;
+  }
+
+  .navegacao__mobile a.icon {
+    background: whitesmoke;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .contato {
+    padding: 25% 0 10% 0;
+  }
+
+  .contato__conteudo {
+    padding: 0;
+  }
+
+  .formulario__contato {
+    width: 100%;
+  }
+
+  .habilidades	{
+    padding: 4rem 0 0 0;
+    margin: 0 10% 0 8%;
+    gap: 1rem;
+  }
+
+  .habilidades__conteudo {
+    flex-direction: column-reverse;
+  }
+  
+  .habilidades__conteudo__texto {
+    width: 100%;
+  }
 
 }

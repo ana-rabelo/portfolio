@@ -1,62 +1,122 @@
 <!DOCTYPE html>
-<html lang="pt-br" data-theme="light" style="color-scheme: light;">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-br" data-theme="light" style="color-scheme: light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ana Rabelo - Contato</title>
-    <link rel="icon"  href="assets/images/icon_star.png" type="image/png">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="assets/images/icon_star.png" type="image/png" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/script.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="navegacao">
-            <a class="navegacao__link" href="./index.html">Home</a>
-            <a class="navegacao__link" href="./aboutme.html">Sobre mim</a>
-            <a class="navegacao__link" href="./skills.html">Habilidades</a>
-            <a class="navegacao__link" href="./contactme.html">Contato</a>   
-            
-            <div class="navegacao__toggle-theme" id="toggleTheme">
-                <span class="toggle-theme sun">🌞</span>
-                <label class="switch" for="themeSwitch">
-                  <input type="checkbox" id="themeSwitch">
-                  <span class="slider round"></span>
-                </label>
-                <span class="toggle-theme moon">🌜</span>
-            </div>
-        </nav>
+      <nav class="navegacao">
+        <a class="navegacao__link" href="./index.html">Home</a>
+        <a class="navegacao__link" href="./aboutme.html">Sobre mim</a>
+        <a class="navegacao__link" href="./skills.html">Habilidades</a>
+        <a class="navegacao__link" href="./contactme.html">Contato</a>
+
+        <div class="navegacao__toggle-theme" id="toggleTheme">
+          <span class="toggle-theme sun">🌞</span>
+          <label class="switch" for="themeSwitch">
+            <input type="checkbox" id="themeSwitch" />
+            <span class="slider round"></span>
+          </label>
+          <span class="toggle-theme moon">🌜</span>
+        </div>
+      </nav>
+
+      <section class="navegacao__mobile hidden">
+        <div id="menu">
+          <a class="navegacao__link" href="./index.html">Home</a>
+          <a class="navegacao__link" href="./aboutme.html">Sobre mim</a>
+          <a class="navegacao__link" href="./skills.html">Habilidades</a>
+          <a class="navegacao__link" href="./contactme.html">Contato</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="menuMobile()">
+          <button id="menu-button">
+            <img
+              class="menu-button-img"
+              src="./assets/images/icon_menu-mobile.png"
+              alt=""
+            />
+          </button>
+        </a>
+      </section>
     </header>
     <main class="contato">
-        <section class="contato__conteudo">
-            <h1 class="apresentacao__conteudo__titulo-aboutme">Entre em <strong class="titulo-destaque-verde">contato</strong></h1>
-            <p class="apresentacao__conteudo__texto">Você pode entrar em contato pelas redes abaixo, ou preencher o formulário ao lado que responderei o mais <strong class="titulo-destaque-verde">rápido </strong>possível.</p>
-            <section class="conteudo__redes">
-                <a class="rede__link" href="#">
-                    <img class="rede__icon" width="32px" height="32px" src="./assets/images/icon_gmail.png" alt="">
-                </a>
-                <a class="rede__link" href="#">
-                    <img class="rede__icon" width="32px" height="32px" src="./assets/images/icon_whatsapp.png" alt="">
-                </a>
-            </section>
+      <section class="contato__conteudo">
+        <h1 class="apresentacao__conteudo__titulo-aboutme">
+          Entre em <strong class="titulo-destaque-verde">contato</strong>
+        </h1>
+        <p class="apresentacao__conteudo__texto">
+          Você pode entrar em contato pelas redes abaixo, ou preencher o
+          formulário que responderei o mais
+          <strong class="titulo-destaque-verde">rápido </strong>possível.
+        </p>
+        <section class="conteudo__redes">
+          <a class="rede__link" href="#">
+            <img
+              class="rede__icon"
+              width="32px"
+              height="32px"
+              src="./assets/images/icon_gmail.png"
+              alt=""
+            />
+          </a>
+          <a class="rede__link" href="#">
+            <img
+              class="rede__icon"
+              width="32px"
+              height="32px"
+              src="./assets/images/icon_whatsapp.png"
+              alt=""
+            />
+          </a>
         </section>
+      </section>
 
-        <section class="contato_formulario">
-            <form class="formulario__contato">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" placeholder="Preencha seu nome" required>
+      <section class="contato_formulario">
+        <form class="formulario__contato">
+          <label for="nome">Nome:</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Preencha seu nome"
+            required
+          />
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="seuemail@email.com.br" required>
-                
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem... :)" required></textarea>
-                <button type="submit" class="formulario__contato-btn">Enviar</button>
-            </form>
-        </section>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="seuemail@email.com.br"
+            required
+          />
+
+          <label for="mensagem">Mensagem:</label>
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            placeholder="Sua mensagem... :)"
+            required
+          ></textarea>
+          <button type="submit" class="formulario__contato-btn">Enviar</button>
+        </form>
+      </section>
     </main>
     <footer class="rodape">
-        <p>Desenvolvido por Ana com o </p><img class="rodape__image" width="30px" height="30px" src="./assets/images/Logo Alura Include-light.png" alt="">
-    </footer> 
-</body>
+      <p>Desenvolvido por Ana com o</p>
+      <img
+        class="rodape__image"
+        width="30px"
+        height="30px"
+        src="./assets/images/Logo Alura Include-light.png"
+        alt=""
+      />
+    </footer>
+  </body>
 </html>

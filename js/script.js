@@ -17,9 +17,13 @@ const rodapeImg = document.querySelector(".rodape__image");
 const stacksImg = document.querySelector(".apresentacao__foto-stacks");
 
 window.onload = function () {
-  if (localStorage.getItem("theme") === "dark") {
+  const w = window.innerWidth;
+  if (localStorage.getItem("theme") === "dark" && w >= 600) {
     toggleSwitch.checked = true;
     changeElements("dark");
+  } else {
+    toggleSwitch.checked = false;
+    changeElements("light");
   }
 };
 
@@ -64,7 +68,7 @@ function switchTheme(e) {
   }
 }
 
-// Para efeito e digitação. Adaptado de https://codepen.io/Asadabbas/pen/joVKGE
+// Para efeito de digitação. Adaptado de https://codepen.io/Asadabbas/pen/joVKGE
 var i = 0;
 var tag = document.querySelector(".apresentacao__conteudo__titulo");
 var html = document.querySelector(".apresentacao__conteudo__titulo");
@@ -140,13 +144,6 @@ function changeImage(step) {
         <img width="32px" height=32px src="../assets/images/icon_js.png" alt="JS ícone">
     </div>
     `
-    /*   
-    <a class="texto__link" href="https://ana-rabelo.github.io/fokus/" target="_blank">ACESSAR PROJETO →</a>
-    
-    <a class="texto__link" href="https://ana-rabelo.github.io/guess-my-number/" target="_blank">ACESSAR PROJETO →</a>
-    
-    <a class="texto__link" href="https://ana-rabelo.github.io/pig-game/" target="_blank">ACESSAR PROJETO →</a>
- */
   ];
 
   const links = [
@@ -205,7 +202,16 @@ function changeImage(step) {
 document.querySelector(".prev").addEventListener("click", () => changeImage(-1));
 document.querySelector(".next").addEventListener("click", () => changeImage(1));
 
+/* Para mostrar o menu mobile e trocar o ícone quando estiver aberto ou fechado */
+function menuMobile() {
+  var x = document.getElementById("menu");
+  var icon = document.querySelector(".menu-button-img");
 
-const menuIcon = document.getElementById("menu-icon");
-
-menuIcon.addEventListener("click", () => {});
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+    icon.setAttribute("src", "./assets/images/icon_menu-mobile.png");
+  } else {
+    x.style.display = "flex";
+    icon.setAttribute("src", "./assets/images/icon_close.png");
+  }
+}

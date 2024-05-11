@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="light" style="color-scheme: light;">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,15 +27,18 @@
         </div>
       </nav>
       
-      <section class="navegacao__mobile">
-        <div class="menu-hamburguer">
-            <ul class="menu-list">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./aboutme.html">Sobre mim</a></li>
-                <li><a href="./skills.html">Habilidades</a></li>
-                <li><a href="./contactme.html">Contato</a></li>
-            </ul>
-        </div>
+      <section class="navegacao__mobile hidden">
+          <div id="menu">
+            <a class="navegacao__link" href="./index.html">Home</a>
+            <a class="navegacao__link" href="./aboutme.html">Sobre mim</a>
+            <a class="navegacao__link" href="./skills.html">Habilidades</a>
+            <a class="navegacao__link" href="./contactme.html">Contato</a>
+           </div>
+        <a href="javascript:void(0);" class="icon" onclick="menuMobile()">
+            <button id="menu-button">
+                <img class="menu-button-img" src="./assets/images/icon_menu-mobile.png" alt="">
+            </button>
+        </a>
       </section>
 
     </header>
