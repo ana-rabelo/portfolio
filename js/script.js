@@ -97,7 +97,6 @@ function changeImage(step) {
         <img width="32px" height=32px src="../assets/images/icon_css-3.png" alt="CSS ícone">
         <img width="32px" height=32px src="../assets/images/icon_js.png" alt="JS ícone">
     </div>
-    <a class="texto__link" href="https://ana-rabelo.github.io/fokus/" target="_blank">ACESSAR PROJETO →</a>
     `,
 
     `
@@ -110,7 +109,6 @@ function changeImage(step) {
         <img width="32px" height=32px src="../assets/images/icon_css-3.png" alt="CSS ícone">
         <img width="32px" height=32px src="../assets/images/icon_js.png" alt="JS ícone">
     </div>
-    <a class="texto__link" href="https://ana-rabelo.github.io/guess-my-number/" target="_blank">ACESSAR PROJETO →</a>
     `,
     `
     <h2 class="texto__titulo titulo-destaque-amarelo">Pig Game</h2>
@@ -124,9 +122,48 @@ function changeImage(step) {
         <img width="32px" height=32px src="../assets/images/icon_css-3.png" alt="CSS ícone">
         <img width="32px" height=32px src="../assets/images/icon_js.png" alt="JS ícone">
     </div>
-    <a class="texto__link" href="https://ana-rabelo.github.io/pig-game/" target="_blank">ACESSAR PROJETO →</a>
     `
-  ]
+    /*   
+    <a class="texto__link" href="https://ana-rabelo.github.io/fokus/" target="_blank">ACESSAR PROJETO →</a>
+    
+    <a class="texto__link" href="https://ana-rabelo.github.io/guess-my-number/" target="_blank">ACESSAR PROJETO →</a>
+    
+    <a class="texto__link" href="https://ana-rabelo.github.io/pig-game/" target="_blank">ACESSAR PROJETO →</a>
+ */
+  ];
+
+  const links = [
+    `	<img src="../assets/images/projects/fokus.png" alt="Imagem Projeto Fokus" class="conteudo__imagens-projeto">
+                
+    <div class="conteudo__imagens-icons">
+        <a href="https://github.com/ana-rabelo/fokus" class="icon__view-code" target="_blank">
+            <img width=32px height=32px src="./assets/images/icon_code.png" alt="">
+        </a>
+        <a href="https://ana-rabelo.github.io/fokus/" class="icon__view-project" target="_blank">
+            <img width="32px" height=32px src="./assets/images/icon_eye.png" alt="">
+        </a>
+    </div>`,
+    ` <img src="../assets/images/projects/guess-my-number.png" alt="Imagem Projeto Adivinhe meu número" class="conteudo__imagens-projeto">
+                
+    <div class="conteudo__imagens-icons">
+        <a href="https://github.com/ana-rabelo/guess-my-number" class="icon__view-code" target="_blank">
+            <img width=32px height=32px src="./assets/images/icon_code.png" alt="">
+        </a>
+        <a href="https://ana-rabelo.github.io/guess-my-number/" class="icon__view-project" target="_blank">
+            <img width="32px" height=32px src="./assets/images/icon_eye.png" alt="">
+        </a>
+    </div>`,
+    ` <img src="../assets/images/projects/pig-game.png" alt="Imagem jogo Pig Game" class="conteudo__imagens-projeto">
+                
+    <div class="conteudo__imagens-icons">
+        <a href="https://github.com/ana-rabelo/pig-game" class="icon__view-code" target="_blank">
+            <img width=32px height=32px src="./assets/images/icon_code.png" alt="">
+        </a>
+        <a href="https://ana-rabelo.github.io/pig-game/" class="icon__view-project" target="_blank">
+            <img width="32px" height=32px src="./assets/images/icon_eye.png" alt="">
+        </a>
+    </div>`
+  ];
 
   currentImageIndex += step;
   if (currentImageIndex < 0) {
@@ -143,6 +180,9 @@ function changeImage(step) {
 
   const textoElement = document.querySelector(".habilidades__conteudo__texto");
   textoElement.innerHTML = texto[currentImageIndex];
+
+  const imgLinksElement = document.querySelector(".conteudo__imagens");
+  imgLinksElement.innerHTML = links[currentImageIndex];
 }
 
 document.querySelector(".prev").addEventListener("click", () => changeImage(-1));
