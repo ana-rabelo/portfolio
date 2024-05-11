@@ -12,6 +12,9 @@ navLinks.forEach(function (link) {
 const toggleSwitch = document.getElementById("themeSwitch");
 const iconGitHub = document.querySelector(".links__rede-github");
 const iconLinkedIn = document.querySelector(".links__rede-linkedin");
+const iconCertificado = document.querySelector(".links__rede-certificado");
+const rodapeImg = document.querySelector(".rodape__image");
+const stacksImg = document.querySelector(".apresentacao__foto-stacks");
 
 window.onload = function () {
   if (localStorage.getItem("theme") === "dark") {
@@ -27,6 +30,8 @@ document.documentElement.setAttribute(
 
 function changeElements(theme) {
   document.documentElement.setAttribute("data-theme", `${theme}`);
+  rodapeImg.setAttribute("src", `./assets/images/Logo Alura Include-${theme}.png`);
+
   if (iconGitHub && iconLinkedIn) {
     iconGitHub.setAttribute("src", `./assets/images/icon_github--${theme}.png`);
     iconLinkedIn.setAttribute(
@@ -34,6 +39,18 @@ function changeElements(theme) {
       `./assets/images/icon_linkedin--${theme}.png`
     );
   }
+
+  if (iconCertificado) {
+    iconCertificado.setAttribute(
+      "src",
+      `./assets/images/icon_certificado-${theme}.png`
+    );
+  }
+
+  if (stacksImg) {
+    stacksImg.setAttribute("src", `./assets/images/img_stacks-${theme}.png`);
+  }
+
   localStorage.setItem("theme", `${theme}`);
 }
 
@@ -137,30 +154,30 @@ function changeImage(step) {
                 
     <div class="conteudo__imagens-icons">
         <a href="https://github.com/ana-rabelo/fokus" class="icon__view-code" target="_blank">
-            <img width=32px height=32px src="./assets/images/icon_code.png" alt="">
+            <img width=32px height=32px src="./assets/images/icon_code-light.png" alt="">
         </a>
         <a href="https://ana-rabelo.github.io/fokus/" class="icon__view-project" target="_blank">
-            <img width="32px" height=32px src="./assets/images/icon_eye.png" alt="">
+            <img width="32px" height=32px src="./assets/images/icon_eye-light.png" alt="">
         </a>
     </div>`,
     ` <img src="../assets/images/projects/guess-my-number.png" alt="Imagem Projeto Adivinhe meu número" class="conteudo__imagens-projeto">
                 
     <div class="conteudo__imagens-icons">
         <a href="https://github.com/ana-rabelo/guess-my-number" class="icon__view-code" target="_blank">
-            <img width=32px height=32px src="./assets/images/icon_code.png" alt="">
+            <img width=32px height=32px src="./assets/images/icon_code-light.png" alt="">
         </a>
         <a href="https://ana-rabelo.github.io/guess-my-number/" class="icon__view-project" target="_blank">
-            <img width="32px" height=32px src="./assets/images/icon_eye.png" alt="">
+            <img width="32px" height=32px src="./assets/images/icon_eye-light.png" alt="">
         </a>
     </div>`,
     ` <img src="../assets/images/projects/pig-game.png" alt="Imagem jogo Pig Game" class="conteudo__imagens-projeto">
                 
     <div class="conteudo__imagens-icons">
         <a href="https://github.com/ana-rabelo/pig-game" class="icon__view-code" target="_blank">
-            <img width=32px height=32px src="./assets/images/icon_code.png" alt="">
+            <img width=32px height=32px src="./assets/images/icon_code-light.png" alt="">
         </a>
         <a href="https://ana-rabelo.github.io/pig-game/" class="icon__view-project" target="_blank">
-            <img width="32px" height=32px src="./assets/images/icon_eye.png" alt="">
+            <img width="32px" height=32px src="./assets/images/icon_eye-light.png" alt="">
         </a>
     </div>`
   ];
@@ -187,3 +204,8 @@ function changeImage(step) {
 
 document.querySelector(".prev").addEventListener("click", () => changeImage(-1));
 document.querySelector(".next").addEventListener("click", () => changeImage(1));
+
+
+const menuIcon = document.getElementById("menu-icon");
+
+menuIcon.addEventListener("click", () => {});

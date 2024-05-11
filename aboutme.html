@@ -1,49 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ana Rabelo - Sobre mim</title>
-    <link rel="icon"  href="assets/images/icon_star.png" type="image/png">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="assets/images/icon_star.png" type="image/png" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/script.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="navegacao">
-            <a class="navegacao__link" href="./index.html">Home</a>
-            <a class="navegacao__link" href="./aboutme.html">Sobre mim</a>
-            <a class="navegacao__link" href="./skills.html">Habilidades</a>
-            <a class="navegacao__link" href="./contactme.html">Contato</a>   
+      <nav class="navegacao">
+        <a class="navegacao__link" href="./index.html">Home</a>
+        <a class="navegacao__link" href="./aboutme.html">Sobre mim</a>
+        <a class="navegacao__link" href="./skills.html">Habilidades</a>
+        <a class="navegacao__link" href="./contactme.html">Contato</a>
 
-            <div class="navegacao__toggle-theme" id="toggleTheme">
-                <span class="toggle-theme sun">🌞</span>
-                <label class="switch" for="themeSwitch">
-                <input type="checkbox" id="themeSwitch">
-                <span class="slider round"></span>
-                </label>
-                <span class="toggle-theme moon">🌜</span>
-            </div>
-        </nav>
+        <div class="navegacao__toggle-theme" id="toggleTheme">
+          <span class="toggle-theme sun">🌞</span>
+          <label class="switch" for="themeSwitch">
+            <input type="checkbox" id="themeSwitch" />
+            <span class="slider round"></span>
+          </label>
+          <span class="toggle-theme moon">🌜</span>
+        </div>
+      </nav>
+      
+      <section class="navegacao__mobile">
+        <div class="menu-hamburguer">
+            <ul class="menu-list">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./aboutme.html">Sobre mim</a></li>
+                <li><a href="./skills.html">Habilidades</a></li>
+                <li><a href="./contactme.html">Contato</a></li>
+            </ul>
+        </div>
+      </section>
+
     </header>
 
     <main class="apresentacao">
-        <section class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo-aboutme">Sobre <strong class="titulo-destaque-amarelo">mim</strong></h1>
-            <p class="apresentacao__conteudo__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in nulla arcu. 
-                Praesent eget ipsum nisl. Cras eu dapibus urna. Aliquam lacinia est sapien, a malesuada massa congue at. 
-                Mauris eget risus sollicitudin, tristique libero quis, posuere magna. Morbi elementum dolor vel lobortis sodales. 
-                Donec vitae dignissim lectus. Nulla facilisi. Nullam malesuada lorem ac rutrum tempus. 
-                Integer cursus, velit sit amet fermentum ullamcorper, mi ex pretium odio, et maximus sem libero ac enim. 
-                Phasellus dapibus dolor id aliquet laoreet.</p>
-        </section>
-        <div class="apresentacao__foto">
-            <img class="" src="" alt="">
-        </div>
+      <section class="apresentacao__conteudo">
+        <h1 class="apresentacao__conteudo__titulo-aboutme">
+          Sobre <strong class="titulo-destaque-amarelo">mim</strong>
+        </h1>
+        <p class="apresentacao__conteudo__texto">
+          Minha trajetória na tecnologia inicou há 4 anos. Desde então tenho
+          explorado diversas áreas, como
+          <strong class="titulo-destaque-rosa">desenvolvimento web</strong>,
+          <strong class="titulo-destaque-rosa">análise de dados </strong>e
+          <strong class="titulo-destaque-rosa">inteligência artificial</strong>.
+          Atualmente, estou focada em me aprofundar em programação front-end e
+          back-end. Sou estudante de
+          <strong class="titulo-destaque-rosa">Sistemas de Informação</strong> e
+          estou sempre em busca de novos conhecimentos e desafios. Além da
+          graduação e do programa
+          <strong class="titulo-destaque-rosa">Trilhas</strong>, também estou
+          completando um mestrado em
+          <strong class="titulo-destaque-rosa">Engenharia de Software</strong>.
+        </p>
+
+        <a
+          class="apresentacao__links__rede"
+          href="https://cursos.alura.com.br/user/prabelo79/fullCertificate/a7d4b2e322ba10537ff9099113072022"
+          target="_blank"
+        >
+          <img
+            class="links__rede-certificado"
+            src="./assets/images/icon_certificado-light.png"
+            alt=""
+          />
+          <p>Certificados</p>
+        </a>
+      </section>
+      <div class="apresentacao__foto">
+        <img
+          class="apresentacao__foto-stacks"
+          src="assets/images/img_stacks-light.png"
+          alt=""
+        />
+      </div>
     </main>
 
     <footer class="rodape">
-        <p>Desenvolvido por Ana ❤️</p>
-    </footer>       
-</body>
+      <p>Desenvolvido por Ana com o</p>
+      <img
+        class="rodape__image"
+        width="30px"
+        height="30px"
+        src="./assets/images/Logo Alura Include-light.png"
+        alt=""
+      />
+    </footer>
+  </body>
+</html>
